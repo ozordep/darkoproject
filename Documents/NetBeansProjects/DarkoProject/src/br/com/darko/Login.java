@@ -17,12 +17,13 @@ import javafx.stage.Stage;
  */
 public class Login extends Application {
 
+    public Scene scene;
+
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/br/com/view/Login.fxml"));
-
-        Scene scene = new Scene(root);
-
+        scene = new Scene(root);
+        scene.getStylesheets().add("/br/com/styles/style.css");
         stage.setScene(scene);
         stage.show();
     }
@@ -32,6 +33,14 @@ public class Login extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public Scene getScene() {
+        return scene;
+    }
+
+    public void setScene(Scene scene) {
+        this.scene = scene;
     }
 
 }
