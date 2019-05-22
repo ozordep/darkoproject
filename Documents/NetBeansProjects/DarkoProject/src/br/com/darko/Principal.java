@@ -7,7 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Login extends Application {
+public class Principal extends Application {
 
     private static Stage stage;
     private static Scene scene;
@@ -18,14 +18,16 @@ public class Login extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent painel = FXMLLoader.load(getClass().getResource("/br/com/view/Login.fxml"));
+        Parent painel = FXMLLoader.load(getClass().getResource("/br/com/view/Principal.fxml"));
         scene = new Scene(painel);
         stage.setScene(scene);
-        stage.setTitle("Darko Library System - Login");
+        stage.setTitle("Darko Library System - Tela principal");
         scene.getStylesheets().add("/br/com/styles/style.css");
         stage.show();
+        stage.requestFocus();
         setStage(stage);
         setScene(scene);
+
     }
 
     public static Stage getStage() {
@@ -33,7 +35,7 @@ public class Login extends Application {
     }
 
     public static void setStage(Stage stage) {
-        Login.stage = stage;
+        Principal.stage = stage;
     }
 
     public static Scene getScene() {
@@ -41,7 +43,7 @@ public class Login extends Application {
     }
 
     public static void setScene(Scene scene) {
-        Login.scene = scene;
+        Principal.scene = scene;
     }
 
 }

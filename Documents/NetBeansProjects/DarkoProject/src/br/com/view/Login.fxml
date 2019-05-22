@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Label?>
@@ -14,7 +15,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.controller.LoginController">
    <children>
-      <AnchorPane fx:id="apEntrarNovamente" prefHeight="640.0" prefWidth="460.0" style="-fx-background-color: #9623aa; -fx-border-color: black; -fx-border-width: 2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="456.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="apEntrarNovamente" prefHeight="640.0" prefWidth="460.0" style="-fx-background-color: #9623aa; -fx-border-color: black; -fx-border-width: 2;">
          <children>
             <Pane prefHeight="640.0" prefWidth="460.0" style="-fx-background-color: #9623aa;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="460.0" AnchorPane.topAnchor="0.0">
                <children>
@@ -50,28 +51,24 @@
       </AnchorPane>
       <AnchorPane layoutX="460.0" prefHeight="644.0" prefWidth="460.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-width: 2;">
          <children>
-            <JFXTextField fx:id="txtLogin" focusColor="#d7c5d3" layoutX="171.0" layoutY="190.0" prefHeight="44.0" prefWidth="165.0" promptText="Login" style="-fx-text-fill: black; -fx-prompt-text-fill: grey;" unFocusColor="BLACK">
+            <JFXTextField fx:id="txtLogin" focusColor="BLACK" layoutX="183.0" layoutY="212.0" prefHeight="44.0" prefWidth="165.0" style="-fx-text-fill: black; -fx-prompt-text-fill: grey;" unFocusColor="BLACK">
                <font>
-                  <Font name="NexaBold" size="22.0" />
+                  <Font name="NexaBold" size="18.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="txtSenha" focusColor="#d7c5d3" layoutX="170.0" layoutY="276.0" prefHeight="44.0" prefWidth="165.0" promptText="Senha" style="-fx-prompt-text-fill: black; -fx-prompt-text-fill: grey;" unFocusColor="BLACK">
-               <font>
-                  <Font name="NexaBold" size="22.0" />
-               </font>
-            </JFXTextField>
+            <JFXPasswordField fx:id="txtSenha" focusColor="BLACK" layoutX="183.0" layoutY="315.0" prefHeight="25.0" prefWidth="165.0" unFocusColor="BLACK" />
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="94.0" layoutY="9.0" prefHeight="43.0" prefWidth="293.0" style="-fx-text-fill: BLACK;" text="REALIZAR LOGIN" textAlignment="CENTER">
                <font>
                   <Font name="NexaBold" size="35.0" />
                </font>
             </Label>
-            <JFXButton fx:id="btnLogar" buttonType="RAISED" layoutX="167.0" layoutY="468.0" prefHeight="60.0" prefWidth="146.0" style="-fx-border-color: black; -fx-background-color: white;" text="LOGAR">
+            <JFXButton fx:id="btnLogar" buttonType="RAISED" layoutX="168.0" layoutY="481.0" prefHeight="60.0" prefWidth="146.0" style="-fx-border-color: black; -fx-background-color: white;" styleClass="logar" text="LOGAR">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
             </JFXButton>
-            <FontAwesomeIconView glyphName="USER" layoutX="126.0" layoutY="228.0" size="36.0" stroke="WHITE" />
-            <FontAwesomeIconView glyphName="LOCK" layoutX="125.0" layoutY="314.0" size="36.0" stroke="WHITE" />
+            <FontAwesomeIconView glyphName="USER" layoutX="132.0" layoutY="250.0" size="36.0" stroke="WHITE" />
+            <FontAwesomeIconView glyphName="LOCK" layoutX="135.0" layoutY="340.0" size="36.0" stroke="WHITE" />
             <JFXHamburger alignment="CENTER" layoutX="14.0" layoutY="9.0" prefHeight="44.0" prefWidth="45.0" />
          </children>
       </AnchorPane>

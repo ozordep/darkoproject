@@ -8,4 +8,20 @@ and open the template in the editor.
     Author     : jpped
 */
 
+.logar:hover{
+
+    -fx-cursor: hand;
+
+}
+
+.buttonMenu:hover{
+
+    -fx-background-color: #ad5f9c;
+    -fx-cursor: hand;
+    -fx-border-color: white;
+    -fx-border-width: 0.5;
+}
+
+
+
 
